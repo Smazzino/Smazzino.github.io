@@ -1,0 +1,48 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #007bff;
+  text-align: center;
+}
+
+
+.doppiaImmagine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloccoTitoloImm {
+  width: 48%; /* Il blocco prende il 48% dello schermo */
+  text-align: center; /* Centra la scritta rispetto all'immagine */
+}
+
+.bloccoTitoloImm img {
+  width: 100%; /* L'immagine si adatta alla larghezza del suo blocco */
+  height: auto;
+}
+
+.tasto-home {
+  position: fixed;
+  background-color: #007bff; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  padding: 10px 20px; /* Spazio interno per ingrandire il bottone */
+  text-decoration: none; /* Rimuove la sottolineatura tipica dei link */
+  border-radius: 5px; /* Arrotonda gli angoli */
+  z-index: 1000; /* Mantiene il bottone sempre in primo piano rispetto al resto del sito */
+}
+
+
+.testoImmagine {
+  display: flex;
+  align-items: center; /* Centra gli elementi verticalmente */
+  gap: 20px; /* Aggiunge uno spazio vuoto tra testo e immagine */
+}
+
+.immagineAllineata {
+  width: 150px; /* Imposta la larghezza desiderata per l'immagine */
+  height: auto;
+}
+
