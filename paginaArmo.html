@@ -24,13 +24,36 @@
     <div class="testoImmagine">
         <div class="bloccoTitoloImm">
             <h2> Vele</h2>
-            <h3> Ci sono diversi tipi di vele: </h3>
-            <p> Randa</p>
-            <p> Fiocco</p>
-            <p> Genoa</p>
+            <h3> Ci sono diversi tipi di vele: </h3> 
+        
+            <div style="cursor: pointer; color: rgb(55, 0, 255); text-decoration: none;">
+                <p onclick="cambiaImmagine('fotoRanda.jpg')"> Randa</p>
+                <p onclick="cambiaImmagine('fotoFiocco.jpg')"> Fiocco</p>
+                <p onclick="cambiaImmagine('fotoJennaker.jpg')"> Vele di Prua</p>
+            </div>
         </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNdQQVpgbmF_R8cv2xP-mFdEEnHjSqoL_xP_BxmAR1xfbH7Y0w6d6NHg&s=10" width="400" height="400">
+        
+        <img id="foto-dinamica" src="https://images.unsplash.com/photo-1594739201538-838ea94344df?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" width="400" height="400">
     </div>
+
+
+
+    <script>
+        function cambiaImmagine(nuovaImmagine) {                      // funzione che modifica l'immagine in base al click 
+            const immagine = document.getElementById("foto-dinamica");
+        
+            immagine.src = nuovaImmagine;       // Assegna all'immagine il file corretto
+
+        if (nuovaImmagine === 'fotoJennaker.jpg') {
+            immagine.width = 350; 
+            immagine.removeAttribute("height"); 
+        } else {
+            // Per tutte le altre immagini, rimuove entrambi i vincoli dimensionali
+            immagine.removeAttribute("width");
+            immagine.removeAttribute("height");
+        }
+        }
+    </script>
 
 
 </body>

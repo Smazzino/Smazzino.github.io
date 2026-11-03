@@ -25,40 +25,46 @@
         </div>
     </div>
 
-    <h2> Appendici: </h2>
+    <h2 style="text-align: center;"> Appendici: </h2>
 
     <div class="doppiaImmagine">
 
         <div class="testoImmagine">
-            <h3> Pala del Timone </h3>
+            <h3> Pala del Timone: </h3>
+            <p> singola </p>
             <img src="fotoTimone.jpg" class="immagineAllineata">
-            
         </div>
 
-        <div class="testoImmagine" >
-            <h3> Deriva: </h3>
-            <div style="cursor: pointer; color: rgb(55, 0, 255); text-decoration: none;">
-                <p onclick="cambiaImmagine('fotoDerivaBulbo.jpg')" > con bulbo</p>
-                <p onclick="cambiaImmagine('fotoDerivaNOBulbo.jpg')"> senza bulbo</p>
-            </div>
-  
-            <img id="foto-dinamica" src="fotoDerivaBulbo.jpg" class="immagineAllineata">
+        <div class="testoImmagine">
+            <p> oppure doppia</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WHw5k6EezwVrujJSmACUP78xx40n52hFy9zgqO4HLluYbpqFyuVrrXw&s=10" style="width: 400px; height: 300px;">
         </div>
+
+        
     </div>
     
+    <div class="testoImmagine" >
+        <h3> Deriva: </h3>
+        <div style="cursor: pointer; color: rgb(55, 0, 255); text-decoration: none;">
+            <p onclick="cambiaImmagine('fotoDerivaBulbo.jpg')" > con bulbo</p>
+            <p onclick="cambiaImmagine('fotoDerivaNOBulbo.jpg')"> senza bulbo</p>
+        </div>
+  
+        <img id="foto-dinamica" src="fotoDerivaBulbo.jpg" class="immagineAllineata">
+    </div>
+
+
+
+
+
 
     <script>
         function cambiaImmagine(nuovaImmagine) {                      // funzione che modifica l'immagine in base al click 
-          const immagine = document.getElementById("foto-dinamica");
+            const immagine = document.getElementById("foto-dinamica");
         
-         immagine.src = nuovaImmagine;       // Assegna all'immagine il file corretto
+            immagine.src = nuovaImmagine;       // Assegna all'immagine il file corretto
         }
     </script>
-
-
-
-
-
 
 </body>
 </html>

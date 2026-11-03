@@ -39,10 +39,19 @@ h1 {
   display: flex;
   align-items: center; /* Centra gli elementi verticalmente */
   gap: 20px; /* Aggiunge uno spazio vuoto tra testo e immagine */
+  margin-top: 20px; /* Aggiunge uno spazio sopra il blocco */
 }
 
 .immagineAllineata {
   width: 150px; /* Imposta la larghezza desiderata per l'immagine */
   height: auto;
 }
+
+.immagine-centrata {
+  display: block;
+  margin: 0 auto; /* 0 indica nessun margine sopra/sotto, auto divide lo spazio orizzontale */
+  width: 500px;
+  height: 400px;
+}
+
 
